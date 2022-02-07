@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스라바6</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: dodgerblue;
+        }
+        nav a {
+            display: inline-block;
+            position: relative;
+            margin: 15px 10px;
+            text-decoration: none;
+            text-shadow: 0 0 1px rgba(255,255,255,0.3);
+            font-size: 18px;
+            color: #fff;
+            outline: none;
+
+            }
+            
+        .effect7 a {
+            padding: 10px 0;
+            text-shadow: none;
+            font-weight: 300;
+            color: #0972b4;
+            border-top: 2px solid #0972b4;
+        }
+        .effect7 a:before {
+            content: attr(data-hover);
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 10px 0;
+            max-width: 0;
+            overflow: hidden;
+            font-weight: 300;
+            color: #fff;
+            border-bottom: 2px solid #fff;
+            /* -webkit-transition: max-width 0.5s;
+            -moz-transition: max-width 0.5s; */
+            transition: 0.5s;
+        }
+        .effect7 a:hover:before,
+        .effect7 a:focus:before {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="effect7">
+        <a href="#" data-hover="HTML">HTML</a>
+        <a href="#" data-hover="CSS">CSS</a>
+        <a href="#" data-hover="JavaScript">JavaScript</a>
+        <a href="#" data-hover="jQuery">jQuery</a>
+        <a href="#" data-hover="References">References</a>
+    </nav>
+</body>
+</html>

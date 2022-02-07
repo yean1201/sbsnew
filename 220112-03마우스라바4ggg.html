@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스라바4</title>
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(233, 98, 170);
+        }
+        nav a {
+            display: inline-block;
+            position: relative;
+            margin: 15px 10px;
+            text-decoration: none;
+            text-shadow: 0 0 1px rgba(255,255,255,0.3);
+            font-size: 18px;
+            color: #fff;
+            outline: none;
+      
+        }
+
+        nav a:hover,
+        nav a:focus {
+            outline: none;
+        }
+
+        .effect5 a {
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        .effect5 a:before {
+            content: "";
+            display: block;
+            clear: both;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            transition: 0.2s;
+            background: #fff;
+        }
+
+        .effect5 a:hover:before {
+            content: "";
+            display: block;
+            clear: both;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            transition: 0.2s;
+        }
+
+        .effect5 a:after {
+            content: "";
+            display: block;
+            clear: both;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            transition: 0.2s;
+            background: #fff;
+            opacity: 0;
+            transform: translateX(0) translateY(-2px);
+        }
+
+        .effect5 a:hover:after {
+            content: "";
+            display: block;
+            clear: both;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            transition: 0.2s;
+            opacity: 1;
+            transform: translateX(0) translateY(0);
+        }
+
+        span:nth-child(2) {
+            font-size: 13px;
+            color: #000;
+            display: none;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="effect5">
+        <a href="#"><span>HTML</span><span>Definition and Usage</span></a>
+        <a href="#"><span>CSS</span><span>Definition and Usage</span></a>
+        <a href="#"><span>JavaScript</span><span>Definition and Usage</span></a>
+        <a href="#"><span>jQuery</span><span>Definition and Usage</span></a>
+        <a href="#"><span>References</span><span>Definition and Usage</span></a>
+    </nav>
+</body>
+</html>
